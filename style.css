@@ -1,0 +1,103 @@
+/* Google font - Inconsolata, space mono, and Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700&family=Space+Mono:wght@400;700&display=swap');
+/* Common Shareable Styles */
+body {
+  font-family: "Inconsolata", monospace;
+}
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+  padding: 0 25px;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+header h1 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.92px;
+  text-transform: uppercase;
+}
+main {
+    height: calc(100vh - 5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.scarecrow {
+    max-width: 400px;
+}
+.scarecrow img {
+  width: 100%;
+  height: auto;
+}
+.content {
+    align-self: flex-start;
+}
+.content h1 {
+  color: #333;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.68px;
+  margin-bottom: 30px;
+}
+.content p {
+  color: #4f4f4f;
+  font-family: "Space Mono";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.63px;
+  margin-bottom: 55px;
+}
+.content .btn {
+  background: #333;
+  color: #fff;
+  font-family: "Space Mono";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.49px;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  display: inline-block;
+  text-decoration: none;
+}
+footer {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: #bdbdbd;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+/* For Tablets, laptop, and desktop */
+@media all and (min-width: 768px){
+    .page-container {
+        flex-direction: row;
+        gap: 40px;
+    }
+}
